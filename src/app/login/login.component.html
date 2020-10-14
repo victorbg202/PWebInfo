@@ -1,0 +1,70 @@
+<h1>Visita el teu espai</h1>
+
+<div class="container login-container login-form-1" id="principal" *ngIf="loginRegistrar === 'all'">
+  <div class="form-group">
+    <input type="submit" class="btnSubmit" value="Login" (click)="changeLogin('login')"/>
+  </div>
+  <div class="form-group">
+    <input type="submit" class="btnSubmit" value="Registrar" (click)="changeLogin('registrar')"/>
+  </div>
+</div>
+
+  <div class="container login-container login-form-1" *ngIf="loginRegistrar === 'login'">
+      <h3>Login</h3>
+      <form>
+          <div class="form-group">
+              <input type="text" class="form-control" placeholder="Email *" value="" />
+          </div>
+          <div class="form-group">
+              <input type="password" class="form-control" placeholder="Contrassenya *" value="" />
+          </div>
+          <div class="form-group">
+              <input type="submit" class="btnSubmit" value="Login" />
+          </div>
+          <div class="form-group">
+              <a href="#" class="ForgetPwd">Has oblidat la contrassenya?</a>
+          </div>
+      </form>
+      <div class="form-group">
+        <input type="submit" class="btnSubmit" value="Enrere" (click)="changeLogin('all')"/>
+      </div>
+  </div>
+
+  <div class="container login-container login-form-2" *ngIf="loginRegistrar === 'registrar'">
+    <div class="container register-form">
+      <div class="form">
+          <h3>Registrat</h3>
+          <br>
+          <br>
+          <div class="form-content">
+
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Email *" value="" />
+            </div>
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Your Name *" value=""/>
+                      </div>
+                      <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Phone Number *" value=""/>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Your Password *" value=""/>
+                      </div>
+                      <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Confirm Password *" value=""/>
+                      </div>
+                  </div>
+              </div>
+              <br>
+              <button type="button" class="btnSubmit" >Registrar</button>
+          </div>
+      </div>
+    </div>
+    <input type="submit" class="btnSubmit enrere" value="Enrere" (click)="changeLogin('all')"/>
+
+
+</div>
