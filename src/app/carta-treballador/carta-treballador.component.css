@@ -1,3 +1,7 @@
+h1 {
+  text-align: center;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -7,16 +11,19 @@ body {
   align-items: center;
 }
 
-/*.container {
-  width: 1000px;
+.container {
+  margin: 0;
+  width: auto;
   position: relative;
   display: flex;
+  left: 50%;
+  transform: translateX(-55%);
   justify-content: space-between;
-}*/
+}
 
 .container .card {
-  width: 0;
-  margin: 20px;
+  width: auto;
+  margin: 70px;
   border: 0px solid transparent;
   position: relative;
 }
@@ -99,3 +106,66 @@ body {
   color: #fff;
 }
 
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: 0;
+    width: auto;
+    position: relative;
+    display: flex;
+    left: 50%;
+    justify-content: space-between;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container {
+    margin: 0;
+    width: auto;
+    position: relative;
+    display: flex;
+    left: 60%;
+    justify-content: space-between;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    margin: 0;
+    width: auto;
+    position: relative;
+    display: flex;
+    left: 40%;
+    transform: translateX(-55%);
+    justify-content: space-between;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    margin: 0;
+    width: auto;
+    position: relative;
+    display: flex;
+    left: 45%;
+    transform: translateX(-52%);
+    justify-content: space-between;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    margin: 0;
+    width: auto;
+    position: relative;
+    display: flex;
+    left: 50%;
+    transform: translateX(-55%);
+    justify-content: space-between;
+  }
+}
