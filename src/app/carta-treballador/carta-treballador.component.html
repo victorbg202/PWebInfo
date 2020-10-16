@@ -1,0 +1,17 @@
+ <h1>Els nostres treballadors</h1>
+<div class="container row text-center" >
+  <div class="card col-lg-2 col-md-2 col-8" *ngFor="let treballador of treballadors">
+    <div class="face face1">
+      <div class="content">
+        <img [src]="treballador.imageURL" alt="Treballador">
+        <h3>{{treballador.nom}}</h3>
+      </div>
+    </div>
+    <div class="face face2">
+      <div class="content">
+        <p>{{treballador.descripcio}}</p>
+        <a href="#">Mes Informació</a>
+      </div>
+    </div>
+  </div>
+</div>

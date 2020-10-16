@@ -10,6 +10,7 @@ import { ContacteComponent } from './contacte/contacte.component';
 import { FooterComponent } from './footer/footer.component';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { NavBarPrincipalComponent } from './nav-bar-principal/nav-bar-principal.component';
+import { CartaTreballadorComponent } from './carta-treballador/carta-treballador.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NavBarPrincipalComponent } from './nav-bar-principal/nav-bar-principal.
     ContacteComponent,
     FooterComponent,
     GaleriaComponent,
-    NavBarPrincipalComponent
+    NavBarPrincipalComponent,
+    CartaTreballadorComponent
   ],
   imports: [
     BrowserModule,
